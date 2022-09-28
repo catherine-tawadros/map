@@ -251,8 +251,6 @@ class TripPlanner (TRIP_PLANNER):
             pq.remove_min()
         return result
         
-    
-#### ^^^ YOUR CODE HERE
 
 
 def my_first_example():
@@ -331,4 +329,3 @@ test 'example-find-nearby-queries':
     assert pois_to_names(example_from_handout().find_nearby(0,2, "school", 5)) \
         == None
        
-#### ^^^ YOUR CODE HERE

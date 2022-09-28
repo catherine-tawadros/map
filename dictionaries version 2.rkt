@@ -45,12 +45,10 @@ class AssociationList[K, V] (DICT):
 
     let _head
     let _len
-    #   ^ ADDITIONAL FIELDS HERE
 
     def __init__(self):
         self._head = None
         self._len = 0
-    #   ^ YOUR DEFINITION HERE
     
     def len(self):
         return self._len
@@ -169,7 +167,6 @@ class HashTable[K, V] (DICT):
         self._size = nbuckets
         self._data = [None; self._size]
         self._total_len = 0
-    #   ^ THE REST OF YOUR DEFINITION HERE
 
     def len(self):
         return self._total_len
@@ -223,8 +220,6 @@ class HashTable[K, V] (DICT):
     def __print__(self, print):
         print("#<object:HashTable  _hash=... _size=%p _data=%p>",
               self._size, self._data)
-
-    # Other methods you may need can go here.
 
 
 # first_char_hasher(String) -> Natural
@@ -326,7 +321,6 @@ def compose_menu(d: DICT!) -> DICT?:
     d.put("sara", dish("channa masala", "indian"))
     d.put("iliana", dish("pupusas", "salvadoran"))
     return d
-#   ^ YOUR DEFINITION HERE
 
 test "AssociationList menu":
     let menu = AssociationList()
